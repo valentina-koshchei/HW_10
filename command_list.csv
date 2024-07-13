@@ -1,0 +1,26 @@
+    1  git config --global user.name "Valentyna Koshchei"
+    2  git config --global user.email valentina.koshchei@gmail.com
+    3  git clone https://github.com/valentina-koshchei/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add .
+    9  git commit -m "File .gitignore is modified"
+   10  touch main_test.txt
+   11  git add .
+   12  git commit -m "File main_test.txt is created"
+   13  git checkout -b develop
+   14  touch develop_test.txt
+   15  git add .
+   16  git commit -m "Branch develop and file develop_test.txt are created"
+   17  git status
+   18  git commit -m "File develop_test.txt is modified" 
+   19  git add .
+   20  git commit -m "File develop_test.txt modified"
+   21   
+   22   	
+   23  git checkout main
+   24  git merge develop
+   25  git log
+   26  history > command_list.csv
